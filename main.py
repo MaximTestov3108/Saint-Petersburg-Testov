@@ -22,7 +22,7 @@ class Example(QMainWindow):
             qp.end()
 
     def drawCircle(self, qp):
-        qp.setBrush((QColor(255, 255, 0)))
+        qp.setBrush((QColor(randint(0, 255), randint(0, 255), randint(0, 255))))
         qp.drawEllipse(250, 250, self.t, self.t)
 
     def paint(self):
